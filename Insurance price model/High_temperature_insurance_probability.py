@@ -1,6 +1,12 @@
 import pymysql
 import pandas as pd
 
+
+'''
+2015年上线的XX高温险产品，背后的费率精算方法
+'''
+
+
 def main():
     mon = ['06', '07', '08', '09']
     Date = chartname(mon)
