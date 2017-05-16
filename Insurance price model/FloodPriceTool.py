@@ -19,7 +19,7 @@ import time
 
 # 根据输入的站点号及起止时间提取数据
 def data_export(elements, site_id, start, end):
-    conn = pymysql.connect(host='123.56.193.234', user='wis02', passwd='sini12#op', db='observe_siteId')
+    conn = pymysql.connect(host='###', user='###', passwd='###', db='observe_siteId')
     cur = conn.cursor()
     cur.execute("SELECT {element} FROM obsSiteId where Siteid in ({site})".format(element=elements, site=site_id))
     r = cur.fetchall()
